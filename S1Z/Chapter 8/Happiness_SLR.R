@@ -40,6 +40,7 @@ ggplot(data = happiness_2021, aes(x = life.ex, y = score)) +
        y = "Happiness Score")
 
 
+
 #####################################
 ##Correlation between happiness score
 ##and healthy life expectancy
@@ -52,6 +53,7 @@ happiness_2021 %>%
 #####################################
 happiness_2021 %>%
   summarise(cor(score, life.ex, use="complete.obs"))
+
 
 
 
